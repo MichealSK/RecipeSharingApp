@@ -1,0 +1,72 @@
+﻿@model List<RecipeSharingApp.Domain.Models.RecipeCollection>
+@using RecipeSharingApp.Domain.Models;
+@inject RecipeSharingApp.Service.Interface.IRecipeService RecipeService
+
+@{
+    ViewData["Title"] = "Your Recipe Collections";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mx-auto px-4 py-8">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-extrabold text-gray-900">Your Collections (@Model.Count)</h1>
+        <a asp-action="Create" class="btn btn-primary bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-150 ease-in-out">
+            Create New Collection
+        </a>
+    </div>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="text-center py-12 bg-gray-50 rounded-xl border border-dashed border-gray-300">
+            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+            <h3 class="mt-2 text-xl font-medium text-gray-900">No created collections yet</h3>
+            <p class="mt-1 text-sm text-gray-500">
+                Get started by creating your first personalized recipe collection!
+            </p>
+            <div class="mt-6">
+                <a asp-action="Create" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Create Collection
+                </a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            @foreach (var collection in Model)
+            {
+                <div class="p-2 m-2 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-200">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 truncate">@collection.Name</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            Recipes: @(collection.Recipes?.Count() ?? 0)
+                        </p>
+                        <div class="container flex-column">
+                            @if(collection.Recipes != null)
+                            {
+                                @foreach (var recipe in collection.Recipes)
+                                {
+                                    var fullRecipe = RecipeService.GetById(recipe.RecipeId);
+                                    <img src="@fullRecipe.ImageUrl" width="64" height="64" class="d-inline-flex col-1 p-2" />
+                                }
+                            }
+                        </div>
+                        <div class="mt-4 flex space-x-3">
+                            @* Action links for the collection *@
+                            <a asp-action="Details" asp-route-id="@collection.Id" class="mb-2 btn btn-success">View Recipes in Collection</a>
+
+                            <form asp-action="Delete" method="post">
+                                <input type="hidden" name="id" value="@collection.Id" />
+                                @Html.AntiForgeryToken()
+                                <button type="submit" id="delete-@collection.Id" class="mb-2 btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            }
+        </div>
+    }
+</div>

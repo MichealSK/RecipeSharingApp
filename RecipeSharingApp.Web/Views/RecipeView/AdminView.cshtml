@@ -1,0 +1,71 @@
+﻿@{
+}
+@model List<RecipeSharingApp.Domain.DTOModels.RecipeDTO>
+
+<div class="container">
+
+    <a class="btn btn-warning" asp-action="FetchRecipes">Add Recipes from API to Database</a>
+    <a class="btn btn-danger" asp-action="DeleteAll">Delete All From Database</a>
+
+    <div class="row m-5">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Summary
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Available
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    var item = Model[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>
+                            @item.name
+                        </td>
+                        <td>
+                            <img src="@item.image" width="300" height="300" />
+                        </td>
+                        <td>
+                            @foreach(string inst in item.instructions)
+                            {
+                                @(inst + "\n");
+                                <br />
+                            }
+                        </td>
+                        <td>
+                            @foreach (string inst in item.ingredients)
+                            {
+                                @(inst + "\n");
+                                <br />
+                            }
+                        </td>
+                        <td>
+                            @item.rating
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\bin\Release\net8.0\RecipeSharingApp.Repository.deps.json
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\bin\Release\net8.0\RecipeSharingApp.Repository.runtimeconfig.json
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\bin\Release\net8.0\RecipeSharingApp.Repository.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\bin\Release\net8.0\RecipeSharingApp.Repository.pdb
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\bin\Release\net8.0\RecipeSharingApp.Domain.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\bin\Release\net8.0\RecipeSharingApp.Domain.pdb
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.csproj.AssemblyReference.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.AssemblyInfoInputs.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.AssemblyInfo.cs
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.csproj.CoreCompileInputs.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSh.21519CBC.Up2Date
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\refint\RecipeSharingApp.Repository.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.pdb
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\RecipeSharingApp.Repository.genruntimeconfig.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Repository\obj\Release\net8.0\ref\RecipeSharingApp.Repository.dll

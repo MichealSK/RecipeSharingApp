@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<UseMicrosoftTestingPlatformRunner>false</UseMicrosoftTestingPlatformRunner>
+		<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentAssertions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+		<PackageReference Include="Microsoft.Playwright.NUnit" Version="1.41.0" />
+		<PackageReference Include="Moq" Version="4.20.70" />
+		<PackageReference Include="NUnit" Version="3.14.0" />
+		<PackageReference Include="NUnit.Analyzers" Version="4.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RecipeSharingApp.Domain\RecipeSharingApp.Domain.csproj" />
+		<ProjectReference Include="..\RecipeSharingApp.Repository\RecipeSharingApp.Repository.csproj" />
+		<ProjectReference Include="..\RecipeSharingApp.Service\RecipeSharingApp.Service.csproj" />
+		<ProjectReference Include="..\RecipeSharingApp.Web\RecipeSharingApp.Web.csproj" />
+	</ItemGroup>
+
+</Project>

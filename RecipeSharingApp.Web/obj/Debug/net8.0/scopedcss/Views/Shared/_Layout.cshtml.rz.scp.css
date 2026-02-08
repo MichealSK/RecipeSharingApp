@@ -1,0 +1,82 @@
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-f858rwvves] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-f858rwvves] {
+  color: #0077cc;
+}
+
+.btn-primary[b-f858rwvves] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-f858rwvves], .nav-pills .show > .nav-link[b-f858rwvves] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-f858rwvves] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-f858rwvves] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-f858rwvves] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-f858rwvves] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-f858rwvves] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+body[b-f858rwvves] {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Bootstrap light background */
+}
+/* Overriding Bootstrap card spacing with Tailwind for uniformity */
+.recipe-card[b-f858rwvves] {
+    border: none;
+    transition: transform 0.2s;
+}
+
+    .recipe-card:hover[b-f858rwvves] {
+        transform: translateY(-5px);
+    }
+
+.recipe-image[b-f858rwvves] {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+/* Custom star coloring */
+.star-filled[b-f858rwvves] {
+    color: #ffc107;
+}
+/* Bootstrap warning color */
+.star-empty[b-f858rwvves] {
+    color: #ced4da;
+}
+/* Bootstrap muted color */
+
+/* Ensure lists are clean within the card */
+.card-list[b-f858rwvves] {
+    padding-left: 1.5rem;
+}

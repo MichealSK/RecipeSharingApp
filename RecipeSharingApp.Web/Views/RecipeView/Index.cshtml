@@ -1,0 +1,211 @@
+﻿@model IEnumerable<RecipeSharingApp.Domain.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+
+<div class="container mx-auto px-4">
+    <div id="recipe-list" class="row g-4">
+        @foreach (var item in Model)
+                {
+                    <!-- Outer column wrapper for Bootstrap grid (4 per row on large, stacks smaller) -->
+                    <div class="col-3 col-sm-6 col-lg-3"> 
+                        <div class="card h-full recipe-card rounded-xl shadow-lg border-2 border-gray-100">
+                            
+                            <!-- 1. Image -->
+                            <img src="@item.ImageUrl" alt="@item.Name" class="card-img-top recipe-image rounded-t-xl" 
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x200/4F46E5/FFFFFF?text=Image+Unavailable';" />
+
+                            <!-- Card Body (all content is displayed vertically) -->
+                            <div class="card-body flex flex-col justify-start">
+                                
+                                <!-- 2. Name (Title) -->
+                                <h5 class="card-title text-xl font-bold text-gray-800">@item.Name</h5>
+
+                                <!-- 3. Rating (Stars) - Razor Logic -->
+                                @{
+                                    // Calculate the number of full stars (rounding the rating for display)
+                                    int fullStars = (int)Math.Round(item.Rating); 
+                                }
+                                <div class="d-flex align-items-center mb-2">
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        if (i <= fullStars)
+                                        {
+                                            <span class="star-filled text-xl mr-1">&#9733;</span> <!-- Full star -->
+                                        }
+                                        else
+                                        {
+                                            <span class="star-empty text-xl mr-1">&#9734;</span> <!-- Empty star -->
+                                        }
+                                    }
+                                    <span class="ml-2 text-sm text-gray-500 font-semibold">@item.Rating.ToString("0.0")/5.0</span>
+                                </div>
+
+                                <!-- 4. Instructions -->
+                                <h6 class="text-base font-semibold mt-3 mb-2 text-gray-700">Preparation Time: @item.PrepTime</h6>
+
+                                <!-- 5. Horizontal Separator -->
+                                <hr class="my-3" />
+
+                                <!-- 6. Ingredients -->
+                                <h6 class="text-base font-semibold mt-3 mb-2 text-gray-700">Ingredients:</h6>
+                                <ul class="card-list list-disc mb-0 text-sm text-gray-600">
+                                    @foreach (var ingredient in item.Ingredients)
+                                    {
+                                        <li>@ingredient</li>
+                                    }
+                                </ul>
+
+                                <p class="mt-3 mb-1">
+                                    <a class="btn btn-success text-end" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                                </p>
+                                <p>
+                                    <button type="button" 
+                                            class="btn btn-warning" 
+                                            data-bs-toggle="modal" 
+                                            data-bs-target="#pinToCollectionModal" 
+                                            data-recipe-id="@item.Id">
+                                        <i class="fas fa-thumbtack mr-2"></i> Pin This Recipe
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var currentRecipeId = null;
+
+    $(document).ready(function () {
+        // --- 1. Modal Trigger Logic ---
+        // When the modal button is clicked, store the recipe ID and load collections
+        $('#pinToCollectionModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            currentRecipeId = button.data('recipe-id'); // Extract recipe ID from data-* attributes
+
+            // Clear previous content and show loader
+            var collectionsList = $('#collections-list');
+            collectionsList.empty().append('<p class="text-center py-4 text-gray-500">Loading collections...</p>');
+
+            fetchCollections();
+        });
+
+        // --- 2. AJAX Fetch Collections ---
+        function fetchCollections() {
+            var collectionsList = $('#collections-list');
+            var apiUrl = '/Collection/GetUserCollectionsJson'; 
+
+            $.ajax({
+                url: apiUrl,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    collectionsList.empty();
+                    
+                    if (data && data.length > 0) {
+                        // Render collections as buttons
+                        data.forEach(function (collection) {
+                            var recipeCount = collection.recipes ? collection.recipes : 0;
+                            var $button = $('<button/>', {
+                                text: collection.name + ' (' + recipeCount + ' recipes)',
+                                'data-collection-id': collection.id,
+                                class: 'list-group-item list-group-item-action collection-select-btn',
+                                type: 'button'
+                            });
+                            collectionsList.append($button);
+                        });
+                    } else {
+                        // No collections found message
+                        collectionsList.append('<p class="text-center py-4 text-gray-700">You have no collections. Please create one first!</p>');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    collectionsList.empty().append('<p class="text-center py-4 text-red-600">Error loading collections: ' + error + '</p>');
+                }
+            });
+        }
+
+        // --- 3. AJAX Pinning Logic ---
+        // Handle click on a collection button
+        $('#collections-list').on('click', '.collection-select-btn', function () {
+            var collectionId = $(this).data('collection-id');
+            var button = $(this);
+            var originalText = button.text();
+            
+            // Disable button and show loading state
+            button.prop('disabled', true).text('Pinning...');
+
+            $.ajax({
+                url: '/Collection/PinRecipe', // POST action
+                type: 'POST',
+                // Important: Include Anti-Forgery Token for security
+                headers: {
+                    "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val()
+                },
+                data: {
+                    recipeId: currentRecipeId,
+                    collectionId: collectionId
+                },
+                success: function (response) {
+                    // Check if the server returned a success message/object
+                    if (response.success) {
+                        button.removeClass('list-group-item-action').addClass('list-group-item-success').text('Pinned!');
+                        // Optionally, auto-close the modal after a delay
+                        setTimeout(function() { $('#pinToCollectionModal').modal('hide'); }, 1000);
+                        // IMPORTANT: Refreshing the page is the easiest way to update the UI
+                        // You might want to remove this if you want a smoother SPA-like experience
+                        window.location.reload(); 
+                    } else {
+                        // Handle server-side validation/logic failure (e.g., already pinned)
+                        alert('Pinning failed: ' + (response.message || 'Unknown error.'));
+                        button.prop('disabled', false).text(originalText);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('An error occurred during pinning: ' + error);
+                    button.prop('disabled', false).text(originalText);
+                }
+            });
+        });
+    });
+</script>
+}
+
+                        
+<!-- Bootstrap Modal for Pinning -->
+<div class="modal fade" id="pinToCollectionModal" tabindex="-1" aria-labelledby="pinToCollectionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-lg shadow-xl">
+            
+            <div class="modal-header bg-indigo-600 text-white rounded-t-lg">
+                <h5 class="modal-title font-bold text-xl" id="pinToCollectionModalLabel">Pin Recipe to Collection</h5>
+                <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body p-5">
+                <p class="mb-4 text-gray-700">Select the collection you want to pin this recipe to:</p>
+                
+                <!-- Anti-Forgery Token is crucial for the POST request -->
+                @Html.AntiForgeryToken()
+                
+                <div class="list-group" id="collections-list">
+                    <!-- Collections are loaded here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="modal-footer p-4 border-t border-gray-200">
+                <button type="button" class="btn btn-secondary bg-gray-200 text-gray-700" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

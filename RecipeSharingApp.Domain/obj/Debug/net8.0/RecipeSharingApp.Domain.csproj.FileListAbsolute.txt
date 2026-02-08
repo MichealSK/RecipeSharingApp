@@ -1,0 +1,56 @@
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.deps.json
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.runtimeconfig.json
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.pdb
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.AssemblyReference.cache
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfoInputs.cache
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfo.cs
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.CoreCompileInputs.cache
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\refint\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.pdb
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.genruntimeconfig.cache
+E:\FINKI\Semester 6\IS\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\ref\RecipeSharingApp.Domain.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.deps.json
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.runtimeconfig.json
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.pdb
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.AssemblyReference.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfoInputs.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfo.cs
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.CoreCompileInputs.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\refint\RecipeSharingApp.Domain.dll
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.pdb
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.genruntimeconfig.cache
+G:\Mihail\FINKI\IS Proekti\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\ref\RecipeSharingApp.Domain.dll
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.deps.json
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.runtimeconfig.json
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.dll
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.pdb
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.AssemblyReference.cache
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfoInputs.cache
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfo.cs
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.CoreCompileInputs.cache
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.dll
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\refint\RecipeSharingApp.Domain.dll
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.pdb
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.genruntimeconfig.cache
+C:\FINKI\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\ref\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.deps.json
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.runtimeconfig.json
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\bin\Debug\net8.0\RecipeSharingApp.Domain.pdb
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.AssemblyReference.cache
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfoInputs.cache
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.AssemblyInfo.cs
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.csproj.CoreCompileInputs.cache
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\refint\RecipeSharingApp.Domain.dll
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.pdb
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\RecipeSharingApp.Domain.genruntimeconfig.cache
+E:\FINKI\Semester 6\IS\IS Project\IS Project\RecipeSharingApp\RecipeSharingApp.Domain\obj\Debug\net8.0\ref\RecipeSharingApp.Domain.dll
