@@ -50,6 +50,7 @@ namespace RecipeSharingApp.Service.Impl
             {
                 rankingTotal += ranking.Rating;
             }
+            if (rankingTotal == 0) return 0;
             return Math.Round(rankingTotal/rankings.Count, 1);
         }
 

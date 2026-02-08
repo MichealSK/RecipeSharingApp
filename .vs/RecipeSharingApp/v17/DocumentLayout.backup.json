@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\testsui\\ui\\collectionuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|solutionrelative:testsui\\ui\\collectionuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\testsui\\recipeviewuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|solutionrelative:testsui\\recipeviewuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\testsui\\ui\\recipeviewuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|solutionrelative:testsui\\ui\\recipeviewuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\testsui\\baseuitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|solutionrelative:testsui\\baseuitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\testsui\\collectionuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|solutionrelative:testsui\\collectionuitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\tests\\service\\reciperatingservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|solutionrelative:tests\\service\\reciperatingservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\tests\\service\\recipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|solutionrelative:tests\\service\\recipeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\tests\\service\\recipecollectionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|solutionrelative:tests\\service\\recipecollectionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\tests\\controller\\collectioncontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|solutionrelative:tests\\controller\\collectioncontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C14B5679-0172-41AC-8A70-8C72D7DAB800}|RecipeSharingApp.Service\\RecipeSharingApp.Service.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\recipesharingapp.service\\impl\\reciperatingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C14B5679-0172-41AC-8A70-8C72D7DAB800}|RecipeSharingApp.Service\\RecipeSharingApp.Service.csproj|solutionrelative:recipesharingapp.service\\impl\\reciperatingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\testsui\\testsui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{19AEBF3C-DFC5-4384-B895-CC974D951FB2}|TestsUI\\TestsUI.csproj|solutionrelative:testsui\\testsui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{42B5BF23-1255-47CD-9D06-135E45F8A4D5}|Tests\\Tests.csproj|solutionrelative:tests\\tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E104553A-5039-45A5-B024-01F99E440CBE}|RecipeSharingApp.Web\\RecipeSharingApp.Web.csproj|e:\\finki\\semester 6\\is\\is project\\is project\\recipesharingapp\\recipesharingapp.web\\views\\collection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,8 +54,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 285,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CollectionControllerTests.cs",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Controller\\CollectionControllerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Controller\\CollectionControllerTests.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Controller\\CollectionControllerTests.cs",
+              "RelativeToolTip": "Tests\\Controller\\CollectionControllerTests.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowCcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T19:17:12.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RecipeRatingService.cs",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\RecipeSharingApp.Service\\Impl\\RecipeRatingService.cs",
+              "RelativeDocumentMoniker": "RecipeSharingApp.Service\\Impl\\RecipeRatingService.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\RecipeSharingApp.Service\\Impl\\RecipeRatingService.cs",
+              "RelativeToolTip": "RecipeSharingApp.Service\\Impl\\RecipeRatingService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwEQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T19:00:37.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecipeRatingServiceTests.cs",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Service\\RecipeRatingServiceTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Service\\RecipeRatingServiceTests.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Service\\RecipeRatingServiceTests.cs",
+              "RelativeToolTip": "Tests\\Service\\RecipeRatingServiceTests.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAiwI8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T18:57:45.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecipeServiceTests.cs",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Service\\RecipeServiceTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Service\\RecipeServiceTests.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Service\\RecipeServiceTests.cs",
+              "RelativeToolTip": "Tests\\Service\\RecipeServiceTests.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAqwJAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T18:56:17.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TestsUI",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\TestsUI.csproj",
+              "RelativeDocumentMoniker": "TestsUI\\TestsUI.csproj",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\TestsUI.csproj",
+              "RelativeToolTip": "TestsUI\\TestsUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T17:13:44.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Tests",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Tests.csproj",
+              "RelativeDocumentMoniker": "Tests\\Tests.csproj",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Tests.csproj",
+              "RelativeToolTip": "Tests\\Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T17:12:45.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecipeCollectionServiceTests.cs",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Service\\RecipeCollectionServiceTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Service\\RecipeCollectionServiceTests.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\Tests\\Service\\RecipeCollectionServiceTests.cs",
+              "RelativeToolTip": "Tests\\Service\\RecipeCollectionServiceTests.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAuwKUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T16:37:53.341Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -43,32 +166,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BaseUiTest.cs",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\BaseUiTest.cs",
+              "RelativeDocumentMoniker": "TestsUI\\BaseUiTest.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\BaseUiTest.cs",
+              "RelativeToolTip": "TestsUI\\BaseUiTest.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T12:34:08.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RecipeViewUITests.cs",
-              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\UI\\RecipeViewUITests.cs",
-              "RelativeDocumentMoniker": "TestsUI\\UI\\RecipeViewUITests.cs",
-              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\UI\\RecipeViewUITests.cs",
-              "RelativeToolTip": "TestsUI\\UI\\RecipeViewUITests.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowA4AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\RecipeViewUITests.cs",
+              "RelativeDocumentMoniker": "TestsUI\\RecipeViewUITests.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\RecipeViewUITests.cs",
+              "RelativeToolTip": "TestsUI\\RecipeViewUITests.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T22:00:18.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CollectionUITests.cs",
-              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\UI\\CollectionUITests.cs",
-              "RelativeDocumentMoniker": "TestsUI\\UI\\CollectionUITests.cs",
-              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\UI\\CollectionUITests.cs",
-              "RelativeToolTip": "TestsUI\\UI\\CollectionUITests.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAUwAYAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\CollectionUITests.cs",
+              "RelativeDocumentMoniker": "TestsUI\\CollectionUITests.cs",
+              "ToolTip": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\TestsUI\\CollectionUITests.cs",
+              "RelativeToolTip": "TestsUI\\CollectionUITests.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwv0MAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T19:52:40.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\FINKI\\Semester 6\\IS\\IS Project\\IS Project\\RecipeSharingApp\\RecipeSharingApp.Web\\Views\\Collection\\Index.cshtml",
               "RelativeDocumentMoniker": "RecipeSharingApp.Web\\Views\\Collection\\Index.cshtml",
@@ -76,8 +212,7 @@
               "RelativeToolTip": "RecipeSharingApp.Web\\Views\\Collection\\Index.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-07T19:04:48.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-07T19:04:48.249Z"
             }
           ]
         }

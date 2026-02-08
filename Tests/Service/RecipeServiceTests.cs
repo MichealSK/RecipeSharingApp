@@ -120,5 +120,39 @@ namespace RecipeSharingApp.Tests.Unit
             result.Name.Should().Be("New Name");
             _mockRecipeRepo.Verify(r => r.Update(recipe), Times.Once);
         }
+
+        [Fact]
+        public void DeleteById_NonExistingId_ShouldNotThrowException()
+        {
+            // Arrange
+            var nonExistingId = Guid.NewGuid();
+            _mockRecipeRepo.Setup(r => r.Get(
+                It.IsAny<Expression<Func<Recipe, Recipe>>>(),
+                It.IsAny<Expression<Func<Recipe, bool>>>(),
+                null,
+                null))
+                .Returns((Recipe)null);
+
+            // Act
+            var exception = Record.Exception(() => _service.DeleteById(nonExistingId));
+
+            // Assert
+            Assert.Null(exception);
+        }
+
+        [Fact]
+        public void Update_NonExistingRecipe_ShouldHandleGracefully()
+        {
+            // Arrange
+            var recipe = new Recipe { Id = Guid.NewGuid(), Name = "Fake Pasta" };
+            _mockRecipeRepo.Setup(r => r.Update(It.IsAny<Recipe>())).Returns((Recipe)null);
+
+            // Act
+            var exception = Record.Exception(() => _service.Update(recipe));
+
+            // Assert
+            Assert.Null(exception);
+            _mockRecipeRepo.Verify(r => r.Update(recipe), Times.Once);
+        }
     }
 }

@@ -137,5 +137,35 @@ namespace RecipeSharingApp.Tests.Unit
             result.Should().NotBeNull();
             _mockRatingRepo.Verify(r => r.Update(It.IsAny<RecipeRating>()), Times.Once);
         }
+
+        [Fact]
+        public void GetAverageRanking_NoRatings_ShouldReturnZero()
+        {
+            // Arrange
+            var recipe = new Recipe { Id = Guid.NewGuid() };
+            _mockRatingRepo.Setup(r => r.GetAll<RecipeRating>(It.IsAny<Expression<Func<RecipeRating, RecipeRating>>>(), It.IsAny<Expression<Func<RecipeRating, bool>>>(), null, null))
+                           .Returns(new List<RecipeRating>());
+
+            // Act
+            var result = _service.GetAverageRanking(recipe);
+
+            // Assert
+            result.Should().Be(0);
+        }
+
+        [Fact]
+        public void Update_NonExistingRating_ShouldNotThrowException()
+        {
+            // Arrange
+            var rating = new RecipeRating { Id = Guid.NewGuid(), Rating = 5 };
+            _mockRatingRepo.Setup(r => r.Update(It.IsAny<RecipeRating>())).Returns((RecipeRating)null);
+
+            // Act
+            var exception = Record.Exception(() => _service.Update(rating));
+
+            // Assert
+            Assert.Null(exception);
+            _mockRatingRepo.Verify(r => r.Update(rating), Times.Once);
+        }
     }
 }

@@ -140,5 +140,41 @@ namespace RecipeSharingApp.Tests.Unit
 
             result.Should().HaveCount(1);
         }
+
+        [Fact]
+        public async Task AddRecipeToCollection_InvalidCollectionId_ShouldThrowKeyNotFoundException()
+        {
+            // Arrange
+            var invalidId = Guid.NewGuid();
+            var recipe = new Recipe { Id = Guid.NewGuid() };
+
+            _mockCollectionRepo.Setup(r => r.Get<RecipeCollection>(
+                It.IsAny<Expression<Func<RecipeCollection, RecipeCollection>>>(),
+                It.IsAny<Expression<Func<RecipeCollection, bool>>>(),
+                null,
+                It.IsAny<Func<IQueryable<RecipeCollection>, IIncludableQueryable<RecipeCollection, object>>>()))
+                .Returns((RecipeCollection)null);
+
+            // Act & Assert
+            var exception = await Assert.ThrowsAsync<KeyNotFoundException>(() =>
+                _service.AddRecipeToCollection(invalidId, recipe));
+
+            Assert.Equal($"Recipe collection with ID {invalidId} not found.", exception.Message);
+        }
+
+        [Fact]
+        public void Update_NonExistingCollection_ShouldNotFail()
+        {
+            // Arrange
+            var collection = new RecipeCollection { Id = Guid.NewGuid(), Name = "Empty Collection" };
+            _mockCollectionRepo.Setup(r => r.Update(It.IsAny<RecipeCollection>()));
+
+            // Act
+            var exception = Record.Exception(() => _service.Update(collection));
+
+            // Assert
+            Assert.Null(exception);
+            _mockCollectionRepo.Verify(r => r.Update(collection), Times.Once);
+        }
     }
 }
